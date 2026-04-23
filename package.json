@@ -1,0 +1,28 @@
+{
+  "name": "full-stack-auth-system",
+  "version": "1.0.0",
+  "description": "Full Stack Authentication System with JWT + RBAC",
+  "main": "backend/server.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend && npm run dev",
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "dev": "npm run start",
+    "test": "echo \"Run backend and frontend separately\""
+  },
+  "keywords": [
+    "authentication",
+    "jwt",
+    "rbac",
+    "react",
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
